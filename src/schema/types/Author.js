@@ -1,6 +1,4 @@
-import { GraphQLObjectType } from 'graphql';
-import { GraphQLString } from 'graphql';
-
+import { GraphQLObjectType, GraphQLString } from 'graphql';
 
 export const Author = new GraphQLObjectType({
   name: "Author",
