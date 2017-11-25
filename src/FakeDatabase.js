@@ -61,4 +61,12 @@ class FakeDatabase {
       return item.author === authorId;
     });
   }
+
+  addNewBlogPost(post) {
+    post.id = this.blogPosts.length + 1;
+    this.blogPosts.push(post);
+    return post;
+  }
 }
+
+export const fakeDatabase = new FakeDatabase();
