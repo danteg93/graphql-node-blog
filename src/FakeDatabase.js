@@ -52,7 +52,7 @@ class FakeDatabase {
 
   getAuthor(authorId) {
     return this.authors.filter((author) => {
-      return auhtor.id === authorId;
+      return author.id === authorId;
     })[0];
   }
 
