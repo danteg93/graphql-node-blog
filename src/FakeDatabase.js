@@ -62,10 +62,18 @@ class FakeDatabase {
     });
   }
 
+  //Write Methods
+
   addNewBlogPost(post) {
     post.id = this.blogPosts.length + 1;
     this.blogPosts.push(post);
     return post;
+  }
+
+  addNewComment(comment) {
+    comment.id = this.comments.length + 1;
+    this.comments.push(comment);
+    return comment;
   }
 }
 
