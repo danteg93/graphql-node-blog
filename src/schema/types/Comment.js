@@ -1,4 +1,4 @@
-import { GraphQLObjectType, GraphQLString, GraphQLInt, GraphQLNonNull } from 'graphql';
+import { GraphQLObjectType, GraphQLString, GraphQLInt, GraphQLNonNull, GraphQLInputObjectType } from 'graphql';
 
 export const Comment = new GraphQLObjectType({
   name: "Comment",

@@ -5,7 +5,7 @@ import author from "./queries/author";
 import addPost from "./mutations/addPost";
 import addComment from "./mutations/addComment"
 
-const schema = new GraphQlSchema({
+const schema = new GraphQLSchema({
   query: new GraphQLObjectType({
     name: "Rootquery",
     fields: () => ({
@@ -14,6 +14,7 @@ const schema = new GraphQlSchema({
       ...author
     })
   }),
+
   mutation: new GraphQLObjectType({
     name: "Rootmutation",
     fields: () => ({
