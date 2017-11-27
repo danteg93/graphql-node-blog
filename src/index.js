@@ -1,10 +1,13 @@
 import {graphql} from 'graphql';
-import {schema} from './schema/'
+import schema from "./schema/";
 
 const query = `
   {
     posts {
-      title
+      title,
+      author {
+        name
+      }
     }
   }
 `; //template literal

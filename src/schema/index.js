@@ -22,4 +22,6 @@ const schema = new GraphQLSchema({
       ...addComment
     })
   })
-})
+});
+
+export default schema;
