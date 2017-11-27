@@ -4,11 +4,15 @@
   "description": "GraphQL Sever tutorial",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build": "babel src --out-dir dist/ && node dist/index.js",
+    "serve": "babel src --out-dir dist/ && node dist/serve.js"
   },
   "author": "Dante Garcia",
   "license": "MIT",
   "dependencies": {
+    "express": "^4.16.2",
+    "express-graphql": "^0.6.11",
     "graphql": "^0.11.7"
   },
   "devDependencies": {
