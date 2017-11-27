@@ -5,14 +5,14 @@ import { fakeDatabase } from "../../FakeDatabase";
 export const Post = new GraphQLObjectType({
   name: "Post",
   description: "All details of a blog post",
-  fields: () => {
+  fields: () => ({
     id: { type: GraphQLInt },
     title: { type: GraphQLString },
     content: { type: GraphQLString },
     author: {
       type: Author,
       resolve: (post) => {
-        return fakeDatabase.getAuthor(post.auhtor)
+        return fakeDatabase.getAuthor(post.author)
       }
     },
     comments: {
@@ -21,5 +21,5 @@ export const Post = new GraphQLObjectType({
         return fakeDatabase.getCommentsForPost(post.id);
       }
     }
-  }
+  })
 });
