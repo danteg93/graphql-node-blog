@@ -10,19 +10,19 @@ class FakeDatabase {
       {
         id: 1,
         title: 'Omg What is this',
-        conent: 'YOu will like this post. Or nah tbh',
+        content: 'YOu will like this post. Or nah tbh',
         author: '93e8olo1'
       },
       {
         id: 2,
         title: 'I Love Hedghogs',
-        conent: 'They have stubby legs and their eyes D:',
+        content: 'They have stubby legs and their eyes D:',
         author: '12b9bno4'
       },
       {
         id: 3,
         title: 'Fake Ids LOL',
-        conent: 'You can very easily get a fake ID lmao',
+        content: 'You can very easily get a fake ID lmao',
         author: '69s8nut8'
       },
     ];
